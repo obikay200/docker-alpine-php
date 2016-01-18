@@ -91,10 +91,10 @@ RUN apk add -U grep build-base tar re2c make file \
 	# remove sources
 	rm -rf ~/php ~/libiconv && rm -rf /install
 
+WORKDIR /
+
 # replace origin iconv
 ENV LD_PRELOAD /usr/local/lib/preloadable_libiconv.so
 
 # copy default PHP config
-COPY php.ini /etc/php
-
-WORKDIR /
+COPY /php.ini /etc/php/php.ini
