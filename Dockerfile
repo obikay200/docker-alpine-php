@@ -45,6 +45,7 @@ RUN apk add -U grep build-base tar re2c make file \
         --with-iconv \
         --with-iconv-dir=/usr/local \
         --with-gd \
+        --with-mysql \
         --with-pdo-mysql \
         --enable-opcache \
         --with-jpeg-dir=/usr \
@@ -62,6 +63,7 @@ RUN apk add -U grep build-base tar re2c make file \
     	--disable-rpath \
     	--disable-static \
     	--disable-pcntl \
+    	--enable-ftp \
     	--enable-shared \
     	--enable-soap \
     	--with-imap \
