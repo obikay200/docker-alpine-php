@@ -45,7 +45,7 @@ RUN apk add -U grep build-base tar re2c make file \
         --with-iconv \
         --with-iconv-dir=/usr/local \
         --with-gd \
-        --with-mysql \
+        --with-mysql=mysqlnd \
         --with-pdo-mysql \
         --enable-opcache \
         --with-jpeg-dir=/usr \
