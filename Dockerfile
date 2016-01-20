@@ -1,7 +1,7 @@
 FROM alpine:3.2
 
 # define PHP and libiconv version
-ENV PHP_VERSION 7.0.2
+ENV PHP_VERSION 5.6.17
 ENV LIBICONV_VERSION 1.14
 
 # define workdir to home
